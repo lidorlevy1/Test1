@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Document</title>
+</head>
+
+<body>
+ <header>
+  <h1 id="title">Football positions Survey Form </h1>
+  <p id="description">Help us to improve our team!</p>
+ </header>
+ <form id="survey-form" action="/mhfc">
+  <div class="formgroup">
+   
+   <label id="name-label" for="full_name">Full name</label><br>
+      <input class="form-control" id="name" type="text" name="full_name"  placeholder="Enter your full name" required >
+  </div>
+  <div class="formgroup">
+   <label id="email-label" for="Email">email</label><br>
+      <input class="form-control" id="email" type="email" name="Email"  placeholder="email@email.com" required >
+  </div>
+  <div class="formgroup">
+   <label id="number-label" for="Age">Age</label><br>
+      <input class="form-control" id="number" type="number" name="Age"  placeholder="Enter your Age"  min="16" max="99" required> 
+  </div>
+  <div class="formgroup">
+   <p>Which position does our club need </p>
+   <label for="positions"></label>
+     <select id="dropdown">
+      <option value="player">Player</option>
+      <option value="staff">Staff</option>
+      <option value="management">Management</option>
+    </select>
+</div>
+<div class="formgroup">
+ <p>If you can please point what should we do</p>
+   <label>
+      <input class="input-radio" type="radio" value="Buyplayers" name="Fan_recommend" checked>Buy players</label>
+      <label><br>
+       <input class="input-radio" type="radio" value="Buymannger" name="Fan_recommend">Buy Mannger</label>
+       <label><br>
+        <input class="input-radio" type="radio" value="Selltheclub" name="Fan_recommend">Sell the club    </label>
+  </div>
+  <div class="formgroup">
+   <p>What would you like in the club(Check all that apply)</p>
+   <label>
+    <input class="input-check" type="checkbox" value="thefans" name="prefer">The Fans</label><br>
+    <label>
+     <input class="input-check" type="checkbox" value="theplayers" name="prefer">The Players</label><br>
+     <label>
+      <input class="input-check" type="checkbox" value="thestadium" name="prefer">The stadium</label><br>
+      <label>
+       <input class="input-check" type="checkbox" value="themanagement" name="prefer">The Management    </label><br>
+       <label>
+        <input class="input-check" type="checkbox" value="thestaff" name="prefer">The staff</label><br>
+  </div>
+  <div class="formgroup">
+   <p>Any more suggestions?</p>
+    <textarea id="suggestion" class="input-textarea"  name="suggestions" cols="30" rows="10" placeholder="Enter your suggestions here..."></textarea>
+  </div>
+  <div class="formgroup">
+   <button id="submit">submit</button>
+  </div>
+ </form>
+</body>
+</html>

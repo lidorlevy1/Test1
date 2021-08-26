@@ -1,0 +1,11 @@
+body{
+ background:linear-gradient(green,white);
+ text-align: center;
+ }
+ form { 
+  border-radius: 80px;
+  background-color: rgb(238, 237, 237);
+  padding: 0;
+  margin: auto;
+  width: 25%;
+ }
